@@ -6,6 +6,11 @@ void main() {
 }
 
 class AnimalSound extends StatelessWidget {
+  void playSound(String name, int soundNumber) {
+    final player = AudioCache();
+    player.play('sound$soundNumber$name.wav');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,12 +21,133 @@ class AnimalSound extends StatelessWidget {
           title: Text('Animal Sound'),
         ),
         body: SafeArea(
-          child: Column(
-            children: [
-
-            ],
-          ),
-        ),
+            child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                        child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                            child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                            child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                            child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                            child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  width: 180.0,
+                  height: 220.0,
+                  color: Colors.grey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Expanded(
+                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
+                            child: Image.asset('images/tiger.jpg')),
+                      ),
+                      SizedBox(height: 10.0,),
+                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                      SizedBox(height: 10.0,),
+                    ],
+                  ),
+                ),
+              ],
+            )
+          ],
+        )),
       ),
     );
   }
