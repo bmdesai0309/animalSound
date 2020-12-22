@@ -30,17 +30,27 @@ class AnimalSound extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0),
                   width: 180.0,
                   height: 220.0,
-                  color: Colors.grey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                        child: Image.asset('images/tiger.jpg')),
+                        child: FlatButton(
+                            onPressed: () {
+                              playSound('tiger', 1);
+                            },
+                            child: Image.asset('images/tiger.jpg')),
                       ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'TIGER',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                     ],
                   ),
                 ),
@@ -48,17 +58,27 @@ class AnimalSound extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0),
                   width: 180.0,
                   height: 220.0,
-                  color: Colors.grey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                            child: Image.asset('images/tiger.jpg')),
+                        child: FlatButton(
+                            onPressed: () {
+                              playSound('lion', 2);
+                            },
+                            child: Image.asset('images/lion.jpg')),
                       ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'LION',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                     ],
                   ),
                 ),
@@ -71,17 +91,27 @@ class AnimalSound extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0),
                   width: 180.0,
                   height: 220.0,
-                  color: Colors.grey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                            child: Image.asset('images/tiger.jpg')),
+                        child: FlatButton(
+                            onPressed: () {
+                              playSound('elephant', 3);
+                            },
+                            child: Image.asset('images/elephant.jpg')),
                       ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'ELEPHANT',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                     ],
                   ),
                 ),
@@ -89,63 +119,32 @@ class AnimalSound extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0),
                   width: 180.0,
                   height: 220.0,
-                  color: Colors.grey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                            child: Image.asset('images/tiger.jpg')),
+                        child: FlatButton(
+                            onPressed: () {
+                              playSound('monkey', 4);
+                            },
+                            child: Image.asset('images/monkey.jpg')),
                       ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'MONKEY',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
                     ],
                   ),
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  width: 180.0,
-                  height: 220.0,
-                  color: Colors.grey,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                            child: Image.asset('images/tiger.jpg')),
-                      ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 10.0),
-                  width: 180.0,
-                  height: 220.0,
-                  color: Colors.grey,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Expanded(
-                        child: FlatButton(onPressed: () { playSound('tiger', 1); },
-                            child: Image.asset('images/tiger.jpg')),
-                      ),
-                      SizedBox(height: 10.0,),
-                      Text('TIGER', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
-                      SizedBox(height: 10.0,),
-                    ],
-                  ),
-                ),
-              ],
-            )
           ],
         )),
       ),
